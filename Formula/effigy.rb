@@ -2,25 +2,25 @@ class Effigy < Formula
   desc "Unified task runner for monorepos and nested workspaces"
   homepage "https://github.com/inflatable-cookie/effigy"
   license "MIT"
-  version "0.8.8"
+  version "0.8.9"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/inflatable-cookie/effigy/releases/download/v0.8.8/effigy-aarch64-apple-darwin"
-      sha256 "93d2a84f7c03fbc02b226fe466513f29fb2007c70f38c82da7c026ba229d468f"
+      url "https://github.com/inflatable-cookie/effigy/releases/download/v0.8.9/effigy-aarch64-apple-darwin"
+      sha256 "9e6d05cfbf4d2dea30cad2783a35abc4b70e4c9fad98c3b640307d9bfed07192"
     elsif Hardware::CPU.intel?
-      url "https://github.com/inflatable-cookie/effigy/releases/download/v0.8.8/effigy-x86_64-apple-darwin"
-      sha256 "6130b27743b865fb90b0f57de8a7eb7bb0251e01b839b88fb670ddcb28a475bd"
+      url "https://github.com/inflatable-cookie/effigy/releases/download/v0.8.9/effigy-x86_64-apple-darwin"
+      sha256 "954cdebadd2588a3b4f964a44454e2e49b352fe4bb4a537618f4f36e20dbb3d3"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/inflatable-cookie/effigy/releases/download/v0.8.8/effigy-x86_64-unknown-linux-gnu"
-      sha256 "225c6273e022ad0a4664a36fc0a98bf231b4b9edc4a921d1da591da3991f7861"
+      url "https://github.com/inflatable-cookie/effigy/releases/download/v0.8.9/effigy-x86_64-unknown-linux-gnu"
+      sha256 "d25f283d845b02398d9240d8eb3d14732c5d0ce18351cc67541b9ccae051679a"
     elsif Hardware::CPU.arm?
-      url "https://github.com/inflatable-cookie/effigy/releases/download/v0.8.8/effigy-aarch64-unknown-linux-gnu"
-      sha256 "0f6c07a471bf72c208d962fed03ecb32967314e52ee889a6ad67b49f775562de"
+      url "https://github.com/inflatable-cookie/effigy/releases/download/v0.8.9/effigy-aarch64-unknown-linux-gnu"
+      sha256 "fe3c47071257bef7cc8d30f77dc8c4baeee1659d3919ed47e231c59d021926b0"
     end
   end
 
